@@ -6,4 +6,46 @@
     background-color: beige;
     width: 100vw;
     height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
+.calculator{
+    background-color: #57B4BA;
+    border-radius: 10px;
+}
+
+.calculator form input{
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 0%;
+    cursor: pointer;
+    background: transparent;
+    outline: 0%;
+    box-shadow: 20px;
+
+
+}
+.display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0px;
+    
+}
+  .display input{
+    flex: 1;
+    box-shadow: none;
+    text-align: right;
+    border: 0cap;
+  }
+  form input.equal{
+    width:120px;
+
+  }
+
+  
+

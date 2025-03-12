@@ -4,47 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+    <title>calculator using html,css,js</title>
 </head>
 <body>
     <div class="container">
         <div class="calculator">
             <form action="">
-                <div>
-                    <input type="text" name="text area">
+                <div class="display">
+                    <input type="text" name="textarea">
                 </div>
                 <div>
-                    <input type="button" value="C">
-                    <input type="button" value="DE">
-                    <input type="button" value="%">
-                    <input type="button" value="/">
+                    <input type="button" value="C" onclick="textarea.value =' '">
+                    <input type="button" value="DE"onclick="textarea.value =textarea.value.toString().slice(0,-1)">
+                    <input type="button" value="%" onclick="textarea.value +='%'">
+                    <input type="button" value="/"onclick="textarea.value +='/'">
 
                 </div>
                 <div>
-                    <input type="button" value="7">
-                    <input type="button" value="8">
-                    <input type="button" value="9">
-                    <input type="button" value="*">
+                    <input type="button" value="7" onclick="textarea.value +='7'">
+                    <input type="button" value="8" onclick="textarea.value +='8'">
+                    <input type="button" value="9" onclick="textarea.value +='9'">
+                    <input type="button" value="*" onclick="textarea.value +='*'">
 
                 </div>
                 <div>
-                    <input type="button" value="4">
-                    <input type="button" value="5">
-                    <input type="button" value="6">
-                    <input type="button" value="-">
+                    <input type="button" value="4" onclick="textarea.value +='4'">
+                    <input type="button" value="5" onclick="textarea.value +='5'">
+                    <input type="button" value="6"onclick="textarea.value +='6'">
+                    <input type="button" value="-" onclick="textarea.value +='-'">
 
                 </div>
                 <div>
-                    <input type="button" value="1">
-                    <input type="button" value="2">
-                    <input type="button" value="3">
-                    <input type="button" value="+">
+                    <input type="button" value="1"onclick="textarea.value +='1'">
+                    <input type="button" value="2" onclick="textarea.value +='2'">
+                    <input type="button" value="3" onclick="textarea.value +='3'">
+                    <input type="button" value="+" onclick="textarea.value +='+'">
 
                 </div>
                 <div>
-                    <input type="button" value="0">
-                    <input type="button" value="00">
-                    <input type="button" value="=">
+                    <input type="button" value="0" onclick="textarea.value +='0'">
+                    <input type="button" value="." onclick="textarea.value +='.'">
+                    <input type="button" value="=" class="equal" onclick="textarea.value=eval(textarea.value)">
                     
 
                 </div>
